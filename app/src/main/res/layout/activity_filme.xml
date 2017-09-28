@@ -3,16 +3,46 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="br.com.uniftec.fteclistview.ui.FilmeActivity"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:context="br.com.uniftec.fteclistview.ui.FilmeActivity">
 
-    <TextView android:id="@+id/filme_id"
+    <ImageView
+        android:id="@+id/image_filme_id"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:scaleType="centerInside" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/titulo_id"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4" />
+
+        <TextView
+            android:id="@+id/nota_id"
+            android:layout_width="0dp"
+            android:background="#000000"
+            android:textColor="#ffffff"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/resumo_id"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
 
     <Button
         android:id="@+id/button_fechar"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Fechar"/>
 
